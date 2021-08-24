@@ -1,0 +1,6 @@
+ task hello doLast {
+	def command = ['sh', './my_script.sh']
+	command.execute().with{
+	println "Bash script is executed"
+	}
+}
