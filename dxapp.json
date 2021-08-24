@@ -1,0 +1,36 @@
+{
+  "name": "dash-web-app",
+  "title": "Dash Example Web App",
+  "summary": "An example of building a web applet with Dash",
+  "dxapi": "1.0.0",
+  "version": "0.0.1",
+  "inputSpec": [],
+  "outputSpec": [],
+  "httpsApp": {"ports":[443], "shared_access": "VIEW"},
+  "runSpec": {
+    "timeoutPolicy": {
+      "*": {
+        "hours": 48
+      }
+    },
+    "interpreter": "python3",
+    "release": "16.04",
+    "version":"1",
+    "distribution": "Ubuntu",
+    "file": "src/code.py",
+    "assetDepends": [
+      {
+        "id": "record-FpV12Y80zxbV3ZPV3j2P9Kv3"
+      }
+    ]
+  },
+  "regionalOptions": {
+    "aws:us-east-1": {
+      "systemRequirements": {
+        "*": {
+          "instanceType": "mem1_ssd1_x4"
+        }
+      }
+    }
+  }
+}
