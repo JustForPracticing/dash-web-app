@@ -12,8 +12,8 @@ task world doFirst{
 	}
 }
 
-apply plugin: 'python'
-
+/* apply plugin: 'python'
+*/
 task program {
 	python add.py
 }
