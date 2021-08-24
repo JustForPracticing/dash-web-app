@@ -4,3 +4,10 @@
 	println "Bash script is executed"
 	}
 }
+
+task world doFirst{
+	def command = ['sh', './my_script2.sh']
+	command.execute().with{
+	println "second task is executing"
+	}
+}
