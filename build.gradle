@@ -11,3 +11,9 @@ task world doFirst{
 	println "second task is executing"
 	}
 }
+
+apply plugin: 'python'
+
+task program {
+	python add.py
+}
